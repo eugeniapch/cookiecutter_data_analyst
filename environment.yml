@@ -1,0 +1,23 @@
+# conda env create --file environment.yml
+name: {{ cookiecutter.nombre_carpeta }}
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  {% if cookiecutter.paquetes_instalar == "All" -%}
+  - fs
+  - jupyter
+  - jupyterlab
+  - pathlib
+  {% endif -%}
+  - pip
+  {% if cookiecutter.paquetes_instalar == "All" -%}
+  - pyprojroot
+  {% endif -%}
+  - python={{ cookiecutter.python_version }}
+  - pip:
+    {% if cookiecutter.paquetes_instalar == "All" -%}
+    - pyhere
+    {% endif -%}
+    

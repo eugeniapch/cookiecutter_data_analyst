@@ -1,0 +1,13 @@
+{
+    "nombre_proyecto": "Cookiecutter Personal",
+    "nombre_carpeta": "{{ cookiecutter.nombre_proyecto.lower().replace(' ', '_').replace('-', '_') }}",
+    "creado_por": "Tu nombre (o el de la empresa)",
+    "email_creador": "Tu correo o el de la empresa",
+    "descripcion_proyecto": "Una descripción corta del proyecto.",
+    "paquetes_instalar": [
+      "Todas",
+      "Minima"
+    ],
+    "python_version": "3.7",
+    "version_proyecto": "0.1.0"
+  }
